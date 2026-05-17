@@ -1,6 +1,6 @@
 # 🚀 Get Started with Notify Learn
 
-Welcome to **Notify Learn** — your intelligent learning companion, available everywhere you work and learn. Pick the platform that suits you best and dive in!
+Welcome to **Notify Learn** - your intelligent learning companion, available everywhere you work and learn. Pick the platform that suits you best and dive in!
 
 ---
 
@@ -34,7 +34,7 @@ Supercharge your browser and save while you browse.
 
 ---
 
-## 💻 CLI — macOS & Linux
+## 💻 CLI - macOS & Linux
 
 For those who live in the terminal.
 
