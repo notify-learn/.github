@@ -55,12 +55,12 @@ brew install notify-learn-cli
 Integrate Notify Learn directly into your AI-powered workflow.
 
 ### 1️⃣ Install Globally via NPM
-
+[![npm version](https://img.shields.io/npm/v/notify-learn-mcp.svg)](https://www.npmjs.com/package/notify-learn-mcp)
 ```bash
 npm i -g notify-learn-mcp
 ```
 
-### 2️⃣ Connect to Claude Code
+### 2️⃣ Connect to any Agentic Coding Tool (Claude Code, Antigravity or any other)
 
 Hook it into Claude Code (the fast command-line assistant) with a single command:
 
