@@ -10,6 +10,8 @@ The fastest way to get started, no installation needed.
 
 👉 **[Open Notify Learn](https://notify-learn.vercel.app/)**
 
+Save links and images (paste, drag & drop, or upload) and organize them with tags.
+
 ---
 
 ## 📱 Mobile App (Android)
@@ -39,8 +41,15 @@ Supercharge your browser and save while you browse.
 For those who live in the terminal.
 
 ```bash
-brew tap AKSHILMY/notify-learn-cli https://github.com/AKSHILMY/notify-learn-cli
+brew tap notify-learn/notify-learn-cli https://github.com/notify-learn/notify-learn-cli
 brew install notify-learn-cli
+```
+
+Save a link or an image straight from your terminal:
+
+```bash
+notify-learn-cli save --url https://example.com/article
+notify-learn-cli save-image --file ./screenshot.png --caption "my note" --tags ai
 ```
 
 > ⚠️ **macOS security prompt?** If macOS blocks the app because the developer can't be verified, run:
@@ -52,7 +61,7 @@ brew install notify-learn-cli
 
 ## 🤖 MCP Server
 
-Integrate Notify Learn directly into your AI-powered workflow.
+Integrate Notify Learn directly into your AI-powered workflow. Your assistant can save links (`add_link`), save local images by file path (`add_image`), and read your history and stats (`get_history`, `get_stats`).
 
 ### 1️⃣ Install Globally via NPM
 [![npm version](https://img.shields.io/npm/v/notify-learn-mcp.svg)](https://www.npmjs.com/package/notify-learn-mcp)
