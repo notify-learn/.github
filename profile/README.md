@@ -45,23 +45,35 @@ brew tap notify-learn/notify-learn-cli https://github.com/notify-learn/notify-le
 brew install notify-learn-cli
 ```
 
-Save a link or an image straight from your terminal:
+Save one or more links straight from your terminal:
 
 ```bash
-notify-learn-cli save --url https://example.com/article
-notify-learn-cli save-image --file ./screenshot.png --caption "my note" --tags ai
+# Save a single link
+notifylearn save -u https://example.com/article
+
+# Save multiple links at once
+notifylearn save -u https://example.com/article -u https://another.com/post --tags ai,learning
+
+# Upload one or more images
+notifylearn save-images -f ./screenshot.png -f ./diagram.jpg --caption "my note" --tags ai
+
+# List your saved images
+notifylearn images
+
+# Browse your link history
+notifylearn history
 ```
 
 > ⚠️ **macOS security prompt?** If macOS blocks the app because the developer can't be verified, run:
 > ```bash
-> xattr -d com.apple.quarantine $(which notify-learn-cli)
+> xattr -d com.apple.quarantine $(which notifylearn)
 > ```
 
 ---
 
 ## 🤖 MCP Server
 
-Integrate Notify Learn directly into your AI-powered workflow. Your assistant can save links (`add_link`), save local images by file path (`add_image`), and read your history and stats (`get_history`, `get_stats`).
+Integrate Notify Learn directly into your AI-powered workflow. Your assistant can save links (`add_links`), save local images by file path (`add_images`), and read your history, stats, and images (`get_history`, `get_stats`, `get_images`).
 
 ### 1️⃣ Install Globally via NPM
 [![npm version](https://img.shields.io/npm/v/notify-learn-mcp.svg)](https://www.npmjs.com/package/notify-learn-mcp)
