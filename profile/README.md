@@ -8,7 +8,7 @@ Welcome to **Notify Learn** - your intelligent learning companion, available eve
 
 The fastest way to get started, no installation needed.
 
-👉 **[Open Notify Learn](https://notify-learn.vercel.app/)**
+👉 **[Open Notify Learn](https://notifylearn.akshilmy.com)**
 
 Save links and images (paste, drag & drop, or upload) and organize them with tags.
 
