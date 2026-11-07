@@ -10,13 +10,13 @@ The fastest way to get started, no installation needed.
 
 👉 **[Open Notify Learn](https://notifylearn.akshilmy.com)**
 
-Save links and images (paste, drag & drop, or upload) and organize them with tags.
+Save links and images (paste, drag & drop, or upload) and organize them with tags. Set a reminder at a time you choose (also as browser notifications) and share any item with a public link.
 
 ---
 
 ## 📱 Mobile App (Android)
 
-Take your learning on the go with the Notify Learn Android app.
+Take your learning on the go with the Notify Learn Android app. Save links and images from any app's share sheet, get reminders at the time you pick, and share items with a link.
 
 **Steps to get early access:**
 
@@ -36,44 +36,17 @@ Supercharge your browser and save while you browse.
 
 ---
 
-## 💻 CLI - macOS & Linux
-
-For those who live in the terminal.
-
-```bash
-brew tap notify-learn/notify-learn-cli https://github.com/notify-learn/notify-learn-cli
-brew install notify-learn-cli
-```
-
-Save one or more links straight from your terminal:
-
-```bash
-# Save a single link
-notifylearn save -u https://example.com/article
-
-# Save multiple links at once
-notifylearn save -u https://example.com/article -u https://another.com/post --tags ai,learning
-
-# Upload one or more images
-notifylearn save-images -f ./screenshot.png -f ./diagram.jpg --caption "my note" --tags ai
-
-# List your saved images
-notifylearn images
-
-# Browse your link history
-notifylearn history
-```
-
-> ⚠️ **macOS security prompt?** If macOS blocks the app because the developer can't be verified, run:
-> ```bash
-> xattr -d com.apple.quarantine $(which notifylearn)
-> ```
-
----
-
 ## 🤖 MCP Server
 
-Integrate Notify Learn directly into your AI-powered workflow. Your assistant can save links (`add_links`), save local images by file path (`add_images`), and read your history, stats, and images (`get_history`, `get_stats`, `get_images`).
+Integrate Notify Learn directly into your AI-powered workflow. Your assistant can save and read your links and images, manage tags and reminders, share items, and check notifications:
+
+- **Saving:** `add_links`, `add_images` (local files by path), `preview_link`
+- **Reading:** `get_history`, `get_images`, `get_item`, `get_stats`, `get_image_stats`
+- **Editing:** `update_item` (tags, reminders, read state, image captions), `delete_item`
+- **Sharing:** `share_item`, `get_share`, `unshare_item`, `claim_share`, `get_share_stats`
+- **Reminders and notifications:** `list_reminders`, `get_notifications`, `mark_notifications_opened`, `get_notification_preferences`, `set_notification_preferences`
+- **Tags:** `list_tags`, `list_image_tags`, `create_tag`, `rename_tag`, `delete_tag`
+- **Login:** `login_to_notifylearn` (the token stays on your machine and is never shown to the AI)
 
 ### 1️⃣ Install Globally via NPM
 [![npm version](https://img.shields.io/npm/v/notify-learn-mcp.svg)](https://www.npmjs.com/package/notify-learn-mcp)
