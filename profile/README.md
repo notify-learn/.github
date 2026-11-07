@@ -24,7 +24,6 @@ Take your learning on the go with the Notify Learn Android app. Save links and i
 2. 🏪 Open the **Google Play Store** and sign in with the same email you used to join the group
 3. 📲 Install the app → Click [here](https://play.google.com/store/apps/details?id=com.notifylearn.app) to open app page
 4. ✅ Install and enjoy!
-5. 👀 Watch demo video: Click [here](https://youtube.com/shorts/HDAUZVP3mWI?si=RTU0h7bOzW8C-Gk9)
 
 ---
 
